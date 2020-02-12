@@ -247,9 +247,7 @@ everything["Rejected orders %"] = everything['Rejected orders'] / everything['Am
 everything['Rejected orders %'] = everything['Rejected orders %'].apply (lambda x: round (x, 2))
 
 # style __________________________
-cell_format.set_bg_color('green')
-
-worksheet.write('A1', 'Ray', cell_format)
+everything.set_bg_color('green')
 # save flirterad file
 everything.to_excel (r'C:rapport/Rapport.xlsx')
 
